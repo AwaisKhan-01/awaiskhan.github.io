@@ -3,106 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Awais Khan — AI Engineer</title>
+    <title>Awais Khan — AI & ML Engineer</title>
+    <meta name="description" content="AI & ML Engineer specializing in Computer Vision, NLP, and GPU-Accelerated Deep Learning">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body class="dark-theme">
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo"><a href="#home">M. AWAIS KHAN</a></div>
-            <div class="nav-links">
-                <a href="#work">Projects</a>
-                <a href="#services">Expertise</a>
-                <a href="mailto:ssc.awaiskhan.2490@gmail.com">Contact</a>
-            </div>
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-left">
+            <a href="#home" class="nav-brand">© Awais Khan</a>
         </div>
+        <div class="nav-right" id="nav-menu">
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="label-row">// ASSOCIATE AI ENGINEER @ FUNSOL</div>
-                <h1 class="hero-display">
-                    Designing <span class="text-outline">Generative</span> Media & Scalable AI.
-                </h1>
-                <p class="hero-bio">
-                    Specializing in ComfyUI pipelines, Multimodal RAG, and CUDA optimization. 
-                    Currently scaling inference for 50,000+ users. [cite: 166, 170]
-                </p>
-                <div class="hero-cta">
-                    <a href="#work" class="btn-main">Explore Projects</a>
-                </div>
-            </div>
-        </section>
+    <!-- ═══════════════════════════════════════ HERO ═══════════════════════════════════════ -->
+    <section id="home" class="hero">
 
-        <section id="services" class="services-section">
-            <div class="container border-top">
-                <div class="label-row">// TECHNICAL EXPERTISE</div>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <span class="service-num">01</span>
-                        <h3>Generative AI</h3>
-                        <p>ComfyUI Workflows, Diffusion Models, LORA, and ControlNet. [cite: 114, 154]</p>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">02</span>
-                        <h3>LLMs & RAG</h3>
-                        <p>Multimodal RAG with Llama 3.3, FAISS, and CLIP for financial reasoning. [cite: 210, 213]</p>
-                    </div>
-                    <div class="service-item">
-                        <span class="service-num">03</span>
-                        <h3>GPU Acceleration</h3>
-                        <p>High-performance CUDA kernels achieving 70% inference speedup. [cite: 179, 222]</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Vertical Social Sidebar -->
+        <div class="social-sidebar">
+            <a href="https://www.linkedin.com/in/awais-khan-bbb205264/" target="_blank" class="social-item">LinkedIn</a>
+            <a href="https://github.com/AwaisKhan-01" target="_blank" class="social-item">GitHub</a>
+            <a href="mailto:ssc.awaiskhan.2409@gmail.com" class="social-item">Email</a>
+            <div class="social-line"></div>
+        </div>
 
-        <section id="work" class="work-section">
-            <div class="container border-top">
-                <div class="label-row">// SELECTED WORK</div>
-                <div class="work-grid">
-                    <div class="work-card">
-                        <div class="work-img-wrapper"><div class="work-img-placeholder">MULTIMODAL RAG</div></div>
-                        <div class="work-info">
-                            <span class="work-year">2025</span>
-                            <h3>Llama 3.3 Financial RAG</h3>
-                            <div class="work-tags">Python / FAISS / Groq [cite: 210, 213]</div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img-wrapper"><div class="work-img-placeholder">COMFYUI VIDEO</div></div>
-                        <div class="work-info">
-                            <span class="work-year">2025</span>
-                            <h3>Cinematic Ad Pipeline</h3>
-                            <div class="work-tags">ComfyUI / Runpod / Docker [cite: 215, 219]</div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img-wrapper"><div class="work-img-placeholder">CUDA OPTIM</div></div>
-                        <div class="work-info">
-                            <span class="work-year">2025</span>
-                            <h3>GPU Neural Accelerator</h3>
-                            <div class="work-tags">C++ / CUDA / Tensor Cores [cite: 220, 224]</div>
-                        </div>
-                    </div>
-                    <div class="work-card">
-                        <div class="work-img-wrapper"><div class="work-img-placeholder">WHISPER AUTO</div></div>
-                        <div class="work-info">
-                            <span class="work-year">2025</span>
-                            <h3>Whisper Subtitle Pipeline</h3>
-                            <div class="work-tags">OpenAI Whisper / FFmpeg [cite: 225, 227]</div>
-                        </div>
+        <!-- Scrolling Marquee Name -->
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <span>Awais Khan —&nbsp;</span>
+                <span>Awais Khan —&nbsp;</span>
+                <span>Awais Khan —&nbsp;</span>
+                <span>Awais Khan —&nbsp;</span>
+                <span>Awais Khan —&nbsp;</span>
+                <span>Awais Khan —&nbsp;</span>
+            </div>
+        </div>
+
+        <!-- Hero Labels -->
+        <div class="hero-bottom">
+            <div class="hero-role-left">
+                <p class="hero-tag">// AI & ML Engineer</p>
+            </div>
+            <div class="hero-role-right">
+                <p class="hero-tag">Computer Vision · NLP · GPU Computing</p>
+            </div>
+        </div>
+
+        <!-- Hero Image Strip -->
+        <div class="hero-image-strip">
+            <div class="hero-img-wrapper">
+                <img src="images/awais.jpg" alt="Awais Khan" class="hero-portrait">
+                <div class="hero-img-overlay"></div>
+            </div>
+            <div class="hero-bio-inline">
+                <p class="hero-bio-text">Pushing the boundaries of AI through<br>deep learning & GPU-accelerated research.</p>
+                <a href="#projects" class="hero-cta">
+                    <span>See my Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════ INTRO ═══════════════════════════════════════ -->
+    <section id="about" class="intro-section">
+        <div class="section-container">
+            <div class="section-label-row">
+                <span class="section-slash">// Intro</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-image-col">
+                    <div class="intro-img-frame">
+                        <img src="images/awais.jpg" alt="Awais Khan" class="intro-img">
                     </div>
                 </div>
+                <div class="intro-text-col">
+                    <h2 class="intro-heading">I build intelligent systems that see, understand, and learn.</h2>
+                    <p class="intro-body">
+                        I'm an AI & Machine Learning engineer with a deep focus on computer vision, 
+                        natural language processing, and GPU-accelerated deep learning. My work sits at 
+                        the intersection of cutting-edge research and real-world engineering.
+                    </p>
+                    <p class="intro-body">
+                        When I'm not optimizing CUDA kernels or training neural networks, I'm capturing 
+                        the world through my camera — an art form that directly fuels my computer vision intuition.
+                    </p>
+                    <div class="intro-stats">
+                        <div class="stat">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Projects Shipped</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">3+</span>
+                            <span class="stat-label">Years Learning</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">∞</span>
+                            <span class="stat-label">GPU Hours Spent</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="marquee-footer">
-        <div class="marquee-content">
-            AI ENGINEERING — GENERATIVE MEDIA — GPU ACCELERATION — MLOPS — 
+    <!-- ═══════════════════════════════════════ SKILLS ═══════════════════════════════════════ -->
+    <section id="skills" class="skills-section">
+        <div class="section-container">
+            <div class="section-label-row">
+                <span class="section-slash">// Skills</span>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Accordion Items -->
+            <div class="accordion-list">
+
+                <div class="accordion-item" data-index="01">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="acc-num">01</span>
+                        <span class="acc-title">AI / Machine Learning</span>
+                        <span class="acc-icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="acc-desc">Core ML frameworks and paradigms for building, training, and deploying intelligent models.</p>
+                        <div class="acc-tags">
+                            <span class="acc-tag"><span class="tag-num">01</span> TensorFlow</span>
+                            <span class="acc-tag"><span class="tag-num">02</span> PyTorch</span>
+                            <span class="acc-tag"><span class="tag-num">03</span> Scikit-learn</span>
+                            <span class="acc-tag"><span class="tag-num">04</span> Hugging Face</span>
+                            <span class="acc-tag"><span class="tag-num">05</span> Model Optimization</span>
+                            <span class="acc-tag"><span class="tag-num">06</span> Transfer Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-index="02">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="acc-num">02</span>
+                        <span class="acc-title">Computer Vision & NLP</span>
+                        <span class="acc-icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="acc-desc">Perception systems and language models that extract meaning from images, video, and text.</p>
+                        <div class="acc-tags">
+                            <span class="acc-tag"><span class="tag-num">01</span> OpenCV</span>
+                            <span class="acc-tag"><span class="tag-num">02</span> Image Classification</span>
+                            <span class="acc-tag"><span class="tag-num">03</span> Object Detection</span>
+                            <span class="acc-tag"><span class="tag-num">04</span> Transformers</span>
+                            <span class="acc-tag"><span class="tag-num">05</span> Sequence Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-index="03">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="acc-num">03</span>
+                        <span class="acc-title">GPU Computing & HPC</span>
+                        <span class="acc-icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="acc-desc">High-performance parallel computing for accelerating deep learning training and inference.</p>
+                        <div class="acc-tags">
+                            <span class="acc-tag"><span class="tag-num">01</span> CUDA C++</span>
+                            <span class="acc-tag"><span class="tag-num">02</span> OpenMP</span>
+                            <span class="acc-tag"><span class="tag-num">03</span> Kernel Optimization</span>
+                            <span class="acc-tag"><span class="tag-num">04</span> Memory Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-index="04">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="acc-num">04</span>
+                        <span class="acc-title">Programming Languages</span>
+                        <span class="acc-icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="acc-desc">Languages I use to build, research, and ship production systems.</p>
+                        <div class="acc-tags">
+                            <span class="acc-tag"><span class="tag-num">01</span> Python</span>
+                            <span class="acc-tag"><span class="tag-num">02</span> C++</span>
+                            <span class="acc-tag"><span class="tag-num">03</span> CUDA</span>
+                            <span class="acc-tag"><span class="tag-num">04</span> JavaScript</span>
+                            <span class="acc-tag"><span class="tag-num">05</span> SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item" data-index="05">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span class="acc-num">05</span>
+                        <span class="acc-title">Tools & Infrastructure</span>
+                        <span class="acc-icon">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="acc-desc">DevOps and infrastructure tools for deploying and scaling ML pipelines.</p>
+                        <div class="acc-tags">
+                            <span class="acc-tag"><span class="tag-num">01</span> Docker</span>
+                            <span class="acc-tag"><span class="tag-num">02</span> AWS</span>
+                            <span class="acc-tag"><span class="tag-num">03</span> Git</span>
+                            <span class="acc-tag"><span class="tag-num">04</span> Linux</span>
+                            <span class="acc-tag"><span class="tag-num">05</span> Jupyter</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ PROJECTS ═══════════════════════════════════════ -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <div class="section-label-row">
+                <span class="section-slash">// Projects</span>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="projects-list">
+
+                <!-- Project 1 -->
+                <a href="https://github.com/AwaisKhan-01/FarmConnect-Backend" target="_blank" class="project-card" data-year="2024">
+                    <div class="project-card-inner">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder" data-letter="F">
+                                <span>FC</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-year">(2024)</span>
+                                <span class="project-github"><i class="fab fa-github"></i></span>
+                            </div>
+                            <h3 class="project-title">FarmConnect</h3>
+                            <p class="project-desc">
+                                Agricultural platform connecting farmers with modern technology. 
+                                Integrates ML-based crop disease detection and yield prediction 
+                                to empower farming communities with data-driven insights.
+                            </p>
+                            <div class="project-tags">
+                                <span class="ptag">React</span>
+                                <span class="ptag">Node.js</span>
+                                <span class="ptag">MongoDB</span>
+                                <span class="ptag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="https://github.com/AwaisKhan-01/FanNation" target="_blank" class="project-card" data-year="2024">
+                    <div class="project-card-inner">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder" data-letter="N">
+                                <span>FN</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-year">(2024)</span>
+                                <span class="project-github"><i class="fab fa-github"></i></span>
+                            </div>
+                            <h3 class="project-title">Fan Nation</h3>
+                            <p class="project-desc">
+                                Social platform for sports enthusiasts featuring real-time analytics 
+                                and AI-powered match predictions. Uses TensorFlow for live inference 
+                                and Django REST for high-throughput data serving.
+                            </p>
+                            <div class="project-tags">
+                                <span class="ptag">Python</span>
+                                <span class="ptag">Django</span>
+                                <span class="ptag">TensorFlow</span>
+                                <span class="ptag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="https://github.com/AwaisKhan-01/BST-Parallelizer" target="_blank" class="project-card" data-year="2024">
+                    <div class="project-card-inner">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder" data-letter="B">
+                                <span>BSP</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-year">(2024)</span>
+                                <span class="project-github"><i class="fab fa-github"></i></span>
+                            </div>
+                            <h3 class="project-title">Bubble Sort Parallelizer</h3>
+                            <p class="project-desc">
+                                High-performance parallel bubble sort implementation in CUDA and OpenMP. 
+                                Demonstrates GPU thread management, memory coalescing, and significant 
+                                speedup benchmarks over sequential CPU implementations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="ptag">C++</span>
+                                <span class="ptag">CUDA</span>
+                                <span class="ptag">OpenMP</span>
+                                <span class="ptag">GPU Computing</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="https://github.com/AwaisKhan-01/Neural-Netwoks-Optimization-Using-CUDA-" target="_blank" class="project-card" data-year="2024">
+                    <div class="project-card-inner">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder" data-letter="M">
+                                <span>MGA</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-meta">
+                                <span class="project-year">(2024)</span>
+                                <span class="project-github"><i class="fab fa-github"></i></span>
+                            </div>
+                            <h3 class="project-title">MNIST GPU Accelerator</h3>
+                            <p class="project-desc">
+                                GPU-accelerated neural network for MNIST digit recognition built with 
+                                custom CUDA kernels. Achieves significant training speedup through 
+                                optimized matrix multiplication and parallel backpropagation.
+                            </p>
+                            <div class="project-tags">
+                                <span class="ptag">Python</span>
+                                <span class="ptag">PyTorch</span>
+                                <span class="ptag">CUDA</span>
+                                <span class="ptag">Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ CONTACT MARQUEE ═══════════════════════════════════════ -->
+    <section id="contact" class="contact-section">
+        <div class="contact-marquee-wrap">
+            <div class="contact-marquee-track">
+                <span>Let's Connect —&nbsp;</span>
+                <span>Let's Connect —&nbsp;</span>
+                <span>Let's Connect —&nbsp;</span>
+                <span>Let's Connect —&nbsp;</span>
+                <span>Let's Connect —&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="section-container contact-body">
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <p class="contact-label">// Get In Touch</p>
+                    <h2 class="contact-heading">Open to opportunities, collaborations &amp; research discussions.</h2>
+                </div>
+                <div class="contact-right">
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">Email</span>
+                        <a href="mailto:ssc.awaiskhan.2409@gmail.com" class="contact-detail-value">ssc.awaiskhan.2409@gmail.com</a>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/awais-khan-bbb205264/" target="_blank" class="contact-detail-value">Awais Khan</a>
+                    </div>
+                    <div class="contact-detail">
+                        <span class="contact-detail-label">GitHub</span>
+                        <a href="https://github.com/AwaisKhan-01" target="_blank" class="contact-detail-value">AwaisKhan-01</a>
+                    </div>
+                    <a href="mailto:ssc.awaiskhan.2409@gmail.com" class="contact-btn">
+                        Send a Message <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ FOOTER ═══════════════════════════════════════ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-copy">© 2025 Awais Khan. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/awais-khan-bbb205264/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AwaisKhan-01" target="_blank">GitHub</a>
+                <a href="mailto:ssc.awaiskhan.2409@gmail.com">Email</a>
+            </div>
         </div>
     </footer>
 
